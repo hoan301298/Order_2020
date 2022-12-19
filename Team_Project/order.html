@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+</head>
+
+<body>
+    <div>
+        <a href="login.html">
+            <button type="button" class="btn btn-default btn-sm" style="float: right;">Log out</button>
+        </a>
+    </div>
+
+    <div>
+        <input type="text" id="orderID" placeholder="Order ID"><br>
+        <input type="text" id="customerID" placeholder="Customer ID"><br>
+        <input type="text" id="date" placeholder="Date" ><br>
+        <input type="submit" value="Search" class="btn btn-default btn-sm" id="search" onclick="renderProduct()">
+    </div>
+
+    <div>
+    <p id="info1"></p>
+    <p id="info2"></p>
+    <p id="info3"></p>
+    <p id="info4"></p>
+    <p id="info5"></p>
+    <p id="info6"></p>
+    <p id="info7"></p>
+    <p id="info8"></p>
+    <p id="info9"></p>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th></th>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Supplier Code</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Shelf Pos</th>
+            </tr>
+            <tbody id="tablePickingList"></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div>
+    <input type="button" class="btn btn-default btn-sm" onclick="window.print()" value="Print the order" />
+    </div>
+
+</body>
+
+</html>

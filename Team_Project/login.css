@@ -1,0 +1,37 @@
+body {
+	background-image: url("login.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.box {
+	width: 300px;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: rgb(25, 30, 73);
+}
+
+.box h1 {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px rgb(247, 235, 235);
+	text-align: center;
+}
+
+#username,
+#password {
+	background: none;
+	margin: 18px;
+	text-align: center;
+	border: 2px black solid;
+	padding: 10px 2px;
+	width: 270px;
+	color: rgb(255, 255, 255);
+	border-color: black;
+}
